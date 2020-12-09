@@ -1,0 +1,31 @@
+package com.cg.associate;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import com.cg.associate.entity.Address;
+import com.cg.associate.entity.Employee;
+import com.cg.associate.service.EmployeeService;
+
+@SpringBootTest
+class EmployeeServiceTest {
+
+	@Autowired
+	EmployeeService employeeService;
+	
+	@Test
+	public void addEmployeeTest() {
+		Address address = new Address(201, "noida", "india");
+		Employee employee = new Employee(101, "rajesh", 23, 91, address);
+		Employee actual = employeeService.addEmployee(employee);
+		Assertions.assertNotNull(actual);
+	}
+	
+	@Test
+	public void deleteEmployeeTest() {
+		long empId=101;
+		String actual = employeeService.deleteEmployee(empId);
+		Assertions.assertEquals("Employee record deleted", actual);
+	}
+}

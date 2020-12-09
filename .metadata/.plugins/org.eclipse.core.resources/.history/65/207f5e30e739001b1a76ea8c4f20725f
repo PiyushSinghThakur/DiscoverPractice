@@ -1,0 +1,8 @@
+package com.cg.demo;
+
+
+public interface CalculatorInterface {
+
+	public abstract int add(int a, int b);
+	public int sub(int a, int b);
+}

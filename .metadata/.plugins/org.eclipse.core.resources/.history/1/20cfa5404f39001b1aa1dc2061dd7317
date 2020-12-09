@@ -1,0 +1,8 @@
+package com.cg.associate;
+
+
+
+@SpringBootTest
+class AssociationApplicationTests {
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.cg.employeedao&apos; to &apos;com.cg.employee.dao&apos;&#x0D;&#x0A;- Original project: &apos;SelfJoinDemo&apos;&#x0D;&#x0A;- Original element: &apos;SelfJoinDemo/src/main/java/com.cg.employeedao&apos;&#x0D;&#x0A;- Renamed element: &apos;SelfJoinDemo/src/main/java/com.cg.employee.dao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.cg.employeedao&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.cg.employeedao" name="com.cg.employee.dao" qualified="false" references="true" stamp="1607411586781" textual="false" version="1.0"/>
+</session>

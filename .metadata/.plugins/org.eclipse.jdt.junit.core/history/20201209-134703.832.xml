@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeTests" project="Association" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cg.associate.EmployeeTests" time="0.303" displayname="EmployeeTests" uniqueid="[engine:junit-jupiter]/[class:com.cg.associate.EmployeeTests]">
+    <testcase name="deleteEmployee" classname="com.cg.associate.EmployeeTests" time="0.237" displayname="deleteEmployee()" uniqueid="[engine:junit-jupiter]/[class:com.cg.associate.EmployeeTests]/[method:deleteEmployee()]"/>
+    <testcase name="viewEmployeeTest" classname="com.cg.associate.EmployeeTests" time="0.066" displayname="viewEmployeeTest()" uniqueid="[engine:junit-jupiter]/[class:com.cg.associate.EmployeeTests]/[method:viewEmployeeTest()]"/>
+  </testsuite>
+</testrun>

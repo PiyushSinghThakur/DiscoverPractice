@@ -1,0 +1,15 @@
+package com.cg.demo;
+
+public class DemoImpl implements DemoInterface{
+
+	@Override
+	public void sayHello() {
+		System.out.println("Abstract method implementation");
+	}
+	
+	@Override
+	public void say() {
+		System.out.println("overriden default method implementation");
+	}
+
+}

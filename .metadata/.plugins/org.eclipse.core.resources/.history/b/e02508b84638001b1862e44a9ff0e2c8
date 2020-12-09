@@ -1,0 +1,5 @@
+package com.cg.thyme.dao;
+
+public interface EmployeeDao {
+
+}

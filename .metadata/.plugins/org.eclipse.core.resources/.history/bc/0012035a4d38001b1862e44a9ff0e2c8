@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Thyme Demo</title>
+</head>
+
+<body>
+
+	<h1>Employee Thyme Demo</h1>
+	<hr>
+</body>
+</html>

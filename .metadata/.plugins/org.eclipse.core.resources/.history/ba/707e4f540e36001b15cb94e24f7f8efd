@@ -1,0 +1,14 @@
+<html>
+ <head>
+   <title>Employee</title>
+   <link rel="stylesheet"
+		  th:href="@{/css/demo.css}" />
+ </head>
+ <body style="align-content: center;">
+    <h1>Welcome to Employee Management Page</h1>
+    <a href="viewEmployee">View employees</a>
+    <a href="addEmployee">Add employee</a>
+    <a href="deleteEmployee">Delete employee</a>
+    <a href="updateEmployee">Update employee</a>
+ </body>
+</html>

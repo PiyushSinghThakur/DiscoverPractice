@@ -1,0 +1,5 @@
+package com.cg.associate.advice;
+
+public class EmployeeControllerAdvice {
+
+}

@@ -1,0 +1,11 @@
+package com.cg.employee.service;
+
+import java.util.Set;
+
+import com.cg.employee.entity.Employee;
+
+public interface EmployeeService {
+
+	public Employee addEmployee(Employee employee);
+	public Set<Employee> viewEmployee();
+}

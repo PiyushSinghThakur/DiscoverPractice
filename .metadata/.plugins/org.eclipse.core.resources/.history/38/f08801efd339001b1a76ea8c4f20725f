@@ -1,0 +1,11 @@
+package com.cg.demo;
+
+public class DemoMain {
+
+	public static void main(String[] args) {
+		DemoImpl demo = new DemoImpl();
+		demo.sayHello();
+		demo.say();
+	}
+
+}

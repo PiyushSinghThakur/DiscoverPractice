@@ -1,0 +1,5 @@
+package com.cg.employee.entity;
+
+public class Employee {
+
+}

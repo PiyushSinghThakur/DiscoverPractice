@@ -1,0 +1,5 @@
+package com.cg.thyme.entity;
+
+public class Register {
+
+}

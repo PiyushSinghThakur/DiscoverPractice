@@ -1,0 +1,31 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.dao.ExerciseRepository;
+import com.example.demo.entity.Exercise;
+
+@Service
+public class ExerciseServiceImpl implements ExerciseService{
+	@Autowired
+	ExerciseRepository exerciseRepository;
+
+	@Override
+	public List<Exercise> viewExercise() {
+		return exerciseRepository.findAll();
+	}
+
+	@Override
+	public Exercise addExercise(String name, int duration) {
+		Exercise exercise = new Exercise();
+		exercise.setName(name);
+		exercise.setDuration(duration);
+		exerciseRepository.save(exercise);
+		return goal;
+	}
+	
+
+}

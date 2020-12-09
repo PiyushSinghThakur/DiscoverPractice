@@ -1,0 +1,60 @@
+package com.cg.associate.entity;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Employee")
+public class Employee {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="emp_id")
+	private long eid;
+	@Column(name="emp_name")
+	private String ename;
+	@Column(name="emp_age")
+	int age;
+	@OneToOne(mappedBy="employee", cascade = CascadeType.ALL,fetch=FetchType.LAZY)
+	private Address address;
+	public Employee() {
+		super();
+	}
+	public Employee(long eid, String ename, int age, Address address) {
+		super();
+		this.eid = eid;
+		this.ename = ename;
+		this.age = age;
+		this.address = address;
+	}
+	public long getEid() {
+		return eid;
+	}
+	public void setEid(long eid) {
+		this.eid = eid;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Thyme Demo</title>
+</head>
+
+<body style="background-color: black;">
+
+	<h1 style="color: white;">Employee Thyme Demo</h1>
+	<hr>
+	<a style="color: white;",  th:ref="@{/view}">Employee list</a>
+	<a th:href="@{/emp}">Add Employee</a>
+</body>
+</html>

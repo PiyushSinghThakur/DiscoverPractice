@@ -1,0 +1,17 @@
+package com.cg.associate.dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import com.cg.associate.entity.Employee;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Long>{
+
+	@Query(Select e from Employee e where e.countryCode=:countryCode and e.empAge=:age)
+	List<Employee> findByCodeAndAge(@Param("countryCode") int countryCode, @Param("age")int empAge);
+}

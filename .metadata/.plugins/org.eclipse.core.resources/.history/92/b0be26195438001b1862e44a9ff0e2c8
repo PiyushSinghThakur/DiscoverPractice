@@ -1,0 +1,31 @@
+package com.cg.thyme.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import com.cg.thyme.entity.Employee;
+import com.cg.thyme.service.EmployeeService;
+
+@Controller
+public class EmployeeController {
+	@Autowired
+	EmployeeService employeeService;
+
+	@GetMapping("/")
+	public String home() {
+		return "index";
+	}
+	@GetMapping("/addForm")
+	public String addForm() {
+		return "add-employee";
+	}
+	
+	@GetMapping("/view")
+	public String viewEmployee(Model model) {
+		model.addAttribute("employees", employeeService.viewEmployee());
+        return "list-employees";
+	}
+}

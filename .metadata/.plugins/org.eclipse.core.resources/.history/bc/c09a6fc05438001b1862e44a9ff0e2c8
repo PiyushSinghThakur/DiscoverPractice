@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Add Employee</title>
+</head>
+<body>
+	<h1>Add Employee</h1>
+	<a th:href="@{/}">Home</a>
+</body>
+</html>

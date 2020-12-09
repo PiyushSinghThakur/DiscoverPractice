@@ -1,0 +1,9 @@
+package com.cg.demo;
+
+public class LambdaMain {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

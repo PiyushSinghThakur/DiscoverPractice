@@ -1,0 +1,39 @@
+package com.cg.thyme.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import com.cg.thyme.entity.Employee;
+
+@Controller
+public class EmployeeController {
+
+	private List<Employee> employeeList;
+		@PostConstruct
+		private void loadData() {
+			
+			// create employees
+			Employee emp1 = new Employee("Rajesh",20);
+			Employee emp2 = new Employee("Prakash",22);
+			Employee emp3 = new Employee("Lauren",23);
+
+			// create the list
+			employeeList = new ArrayList<>();
+			
+			// add to the list
+			employeeList.add(emp1);
+			employeeList.add(emp2);
+			tmployees.add(emp3);
+		
+		}
+		@GetMapping
+		public List<Employee> viewEmployee(@ModelAttribute Model model){
+		
+	}
+}

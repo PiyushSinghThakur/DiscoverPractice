@@ -1,0 +1,5 @@
+package com.cg.vendor.entity;
+
+public class Vendor {
+
+}

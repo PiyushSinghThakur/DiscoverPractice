@@ -1,0 +1,5 @@
+package com.cg.vendor.dao;
+
+public interface VendorDao {
+
+}

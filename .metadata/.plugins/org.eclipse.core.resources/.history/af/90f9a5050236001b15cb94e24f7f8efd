@@ -1,0 +1,51 @@
+package com.cg.associate.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+import com.cg.associate.entity.Employee;
+import com.cg.associate.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+
+	@Autowired
+	EmployeeService employeeService;
+	
+	@PostMapping("/addEmployee")
+	public Employee addEmp(@RequestBody Employee employee) {
+		return employeeService.addEmployee(employee);
+	}
+	
+	@PutMapping("/updateEmployee")
+	public String updateEmployee(@RequestBody Employee employee) {
+		return employeeService.updateEmployee(employee);
+	}
+	
+	@DeleteMapping("/deleteEmployee/{empId}")
+	public String deleteEmployee(@PathVariable("empId") long empId) {
+		return employeeService.deleteEmployee(empId);
+	}
+	
+	@GetMapping("/viewEmployee")
+	public List<Employee> viewEmp(){
+		return employeeService.viewEmployee();
+	}
+	
+	@GetMapping("/viewByAge/{age}")
+	public List<Employee> viewByAge(@PathVariable("age") int empAge){
+		return employeeService.findByAge(empAge);
+	}
+	
+	@GetMapping("viewByAgeAndCode/{age}/{code}")
+	public List<Employee> viewByAgeAndCode(@PathVariable("age") int empAge, @PathVariable("code") int countryCode){
+		return employeeService.findByAgeAndCode(empAge, countryCode);
+	}
+}

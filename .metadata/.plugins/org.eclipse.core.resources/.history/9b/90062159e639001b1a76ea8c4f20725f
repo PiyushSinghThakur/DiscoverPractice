@@ -1,0 +1,10 @@
+package com.cg.demo;
+
+public class LambdaMain{
+
+	public static void main(String[] args) {
+		DemoInterface demo =()->System.out.println("abstract method impl using lambda expression");
+		demo.sayHello();  //calling abstract method
+	}
+
+}

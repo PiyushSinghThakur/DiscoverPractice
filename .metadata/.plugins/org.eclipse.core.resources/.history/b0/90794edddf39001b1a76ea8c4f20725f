@@ -1,0 +1,25 @@
+package com.cg.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.*;
+
+public class StreamMain {
+
+	public static void main(String[] args) {
+		List<Product> productsList = new ArrayList<Product>();
+		productsList.add(new Product(1, "HP Laptop", 25000f));
+		productsList.add(new Product(2, "Dell Laptop", 30000f));
+		productsList.add(new Product(3, "Lenevo Laptop", 28000f));
+		productsList.add(new Product(4, "Sony Laptop", 40000f));
+		productsList.add(new Product(5, "Apple Laptop", 90000f));
+		List<Float> productPriceList = productsList.stream().filter(p->p.price>30000).map(p->p.price)
+				.collect(Collectors.toList());
+		System.out.println("Price List:"+productPriceList);
+		System.out.println("Product Name acc to price");
+		productsList.stream().filter(p->p.price>30000).forEach(p->System.out.print(p.name));
+		System.out.println("Iterator");
+		Stream.iterate(1, seed->seed+1).filter(seed->seed%5==0).limit(2).forEach(System.out::println);
+		
+	}
+}
