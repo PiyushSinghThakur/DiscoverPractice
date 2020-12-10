@@ -1,5 +1,3 @@
-
-  
 pipeline {
 
 	agent any
@@ -13,6 +11,19 @@ pipeline {
 				bat 'mvn clean compile'	
 			}	
 		}
-				
+
+
+	
+		stage ('Sonarqube deployment Stage'){
+			steps{
+				bat 'mvn sonar:sonar'	
+			}	
+		}
+		
+		
+		
+		
 	}	
 }
+
+
