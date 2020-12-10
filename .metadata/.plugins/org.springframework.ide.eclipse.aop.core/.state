@@ -4,5 +4,4 @@
 <aop-project name="ProfilesDemo"/>
 <aop-project name="ThymeDemo"/>
 <aop-project name="Association"/>
-<aop-project name="H2Demo"/>
 </aop-reference-model>
