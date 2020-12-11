@@ -1,5 +1,0 @@
-package com.cg.associate.dao;
-
-public interface AddressRepository {
-
-}

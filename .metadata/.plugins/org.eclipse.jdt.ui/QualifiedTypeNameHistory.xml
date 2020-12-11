@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.annotation.Generated"/>
-<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
-<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="org.mockito.Mockito"/>
 <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="javax.annotation.Generated"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
 </qualifiedTypeNameHistroy>

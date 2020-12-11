@@ -9,3 +9,5 @@ Y
 )src/main/resources/application.properties,0\6\06f65155ec73600b9fc5c4dc2883d4bb84d8e284
 ^
 .src/main/resources/application-test.properties,9\b\9b5dcd63a166d577175f4c8533e747203fb1936e
+^
+.src/main/java/com/cg/vendor/entity/Vendor.java,9\5\95f9df50bf306a6bd4e69cb61db622f59e19ec08
