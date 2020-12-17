@@ -1,0 +1,29 @@
+package com.cg.product.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cg.product.dao.ProductDao;
+import com.cg.product.entity.Product;
+
+@Service
+public class ProductServiceImpl implements ProductService{
+
+	@Autowired
+	ProductDao productDao;
+
+	@Override
+	public List<Product> getAllProducts() {
+		return productDao.findAll();
+	}
+
+	@Override
+	public Product getById(Integer productId) {
+		Optional<Product> product = productDao.findById(productId);
+		return product;
+	}
+	
+}

@@ -1,0 +1,27 @@
+package com.cg.product.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+import com.cg.product.entity.Product;
+import com.cg.product.service.ProductService;
+
+@RestController
+public class ProductController {
+
+	@Autowired
+	ProductService productService;
+	
+	@GetMapping("/getAll")
+	List<Product> getAllProducts(){
+		return productService.getAllProducts();
+	}
+	
+	@GetMapping("/getById/{productId}")
+	Product getById(@PathVariable Integer productId) {
+		return productService.getById(productId);
+	}
+}

@@ -1,0 +1,5 @@
+package com.cg.product.exceptions;
+
+public class InvalidProductIdException extends Exception {
+
+}

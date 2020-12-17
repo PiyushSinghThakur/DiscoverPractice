@@ -1,0 +1,5 @@
+package com.cg.product.exceptions;
+
+public class ProductNotFoundException extends Exception {
+
+}

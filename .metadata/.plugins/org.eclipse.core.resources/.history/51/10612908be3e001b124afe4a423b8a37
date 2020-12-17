@@ -1,0 +1,5 @@
+package com.cg.product.advice;
+
+public class ProductControllerAdvice {
+
+}

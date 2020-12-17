@@ -1,0 +1,28 @@
+package com.cg.user.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.cg.user.entity.Product;
+
+@Service
+public class UserServiceImpl implements UserService{
+
+	@Autowired
+	RestTemplate restTemplate;
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Product> getAllProducts() {
+		return restTemplate.getForObject("http://localhost:9090/getAll", List.class);
+	}
+
+	@Override
+	public Product getProductById(int productId) {
+		return restTemplate.getForObject("http://localhost:9090/getById/{productId}", Product.class);
+	}
+
+}

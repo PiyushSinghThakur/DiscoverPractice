@@ -1,0 +1,9 @@
+package com.cg.user.exceptions;
+
+@SuppressWarnings("serial")
+public class UnknownErrorException extends RuntimeException {
+
+	public UnknownErrorException(String msg) {
+		super(msg);
+	}
+}
