@@ -1,20 +1,18 @@
 
-`
-squid:S106";Replace this usage of System.out or System.err by a logger.(µ˜îÓùÿÿÿÿ8İÅï¯ä.H
-`
-squid:S106";Replace this usage of System.out or System.err by a logger.(®¼ıêüÿÿÿÿ8º½é¯ä.H‹
 [
-squid:S106";Replace this usage of System.out or System.err by a logger.(€½ç¿8ÂÉ‹°ä.H
+squid:S106";Replace this usage of System.out or System.err by a logger.(€½ç¿8ÂÉ‹°ä.H
 `
-squid:S106";Replace this usage of System.out or System.err by a logger.(Êë”Åúÿÿÿÿ8ØĞ¤°ä.H‘
-Ysquid:S1118":Add a private constructor to hide the implicit public one.(öæı÷ùÿÿÿÿH‚
-squid:S2293
-"YReplace the type specification in this constructor call with the diamond operator ("<>").(­î‹’ıÿÿÿÿ8É î®ä.Hƒ
+squid:S106";Replace this usage of System.out or System.err by a logger.(µ˜îÓùÿÿÿÿ8İÅï¯ä.HŒ
+`
+squid:S106";Replace this usage of System.out or System.err by a logger.(®¼ıêüÿÿÿÿ8º½é¯ä.H’
 [
-squid:S106";Replace this usage of System.out or System.err by a logger.(–Ã¤è8É î®ä.H§
+squid:S106";Replace this usage of System.out or System.err by a logger.(–Ã¤è8É î®ä.H”
+Ysquid:S1118":Add a private constructor to hide the implicit public one.(öæı÷ùÿÿÿÿH
 `
-squid:S106";Replace this usage of System.out or System.err by a logger.(¤²Å–üÿÿÿÿ8ÏœÒ¯ä.Hˆ
+squid:S106";Replace this usage of System.out or System.err by a logger.(Êë”Åúÿÿÿÿ8ØĞ¤°ä.H
 `
-squid:S106";Replace this usage of System.out or System.err by a logger.(ÄçÎ”ıÿÿÿÿ8»©°ä.H’
+squid:S106";Replace this usage of System.out or System.err by a logger.(¤²Å–üÿÿÿÿ8ÏœÒ¯ä.H‹
 [
-squid:S106";Replace this usage of System.out or System.err by a logger.(ìÑœÑ8º½é¯ä.HŒ
+squid:S106";Replace this usage of System.out or System.err by a logger.(ìÑœÑ8º½é¯ä.H
+`
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÄçÎ”ıÿÿÿÿ8»©°ä.H‘

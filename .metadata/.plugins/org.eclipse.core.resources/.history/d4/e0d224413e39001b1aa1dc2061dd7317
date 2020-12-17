@@ -1,9 +1,0 @@
-package com.cg.vendor.dao;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.cg.vendor.entity.Vendor;
-
-public interface VendorDao extends JpaRepository<Vendor, Long>{
-
-}

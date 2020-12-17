@@ -1,9 +1,0 @@
-<html>
- <head>
-   <title>Demo</title>
- </head>
- <body align="center">
-    <h1>Welcome to Demo Project</h1>
-    <a href="employee">Employee Management</a>
- </body>
-</html>

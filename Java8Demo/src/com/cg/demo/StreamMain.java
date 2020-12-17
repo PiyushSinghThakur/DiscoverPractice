@@ -7,7 +7,7 @@ import java.util.stream.*;
 public class StreamMain {
 
 	public static void main(String[] args) {
-		List<Product> productsList = new ArrayList<Product>();
+		List<Product> productsList = new ArrayList<>();
 		productsList.add(new Product(1, "HP Laptop", 25000f));
 		productsList.add(new Product(2, "Dell Laptop", 30000f));
 		productsList.add(new Product(3, "Lenevo Laptop", 28000f));

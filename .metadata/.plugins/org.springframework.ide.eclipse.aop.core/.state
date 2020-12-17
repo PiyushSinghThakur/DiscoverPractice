@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="SelfJoinDemo"/>
+<aop-project name="UserService"/>
 <aop-project name="ProfilesDemo"/>
 <aop-project name="ThymeDemo"/>
 <aop-project name="Association"/>
+<aop-project name="EurekaServer"/>
+<aop-project name="ProductService"/>
 </aop-reference-model>

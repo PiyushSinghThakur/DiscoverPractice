@@ -1,0 +1,9 @@
+package com.cg.user.service;
+
+import java.util.List;
+import com.cg.user.entity.Product;
+
+public interface UserService {
+	public List<Product> getAllProducts();
+	public Product getProductById(Integer productId);
+}
